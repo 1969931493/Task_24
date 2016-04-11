@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Task_24演示(二叉树遍历)</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="css/task_24.css"></link>
+		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="js/task_24.js"></script>
+	</head>
+	<body>
+		<div id="first">
+			<div id="content">
+				super
+				<div id="Tree_One">
+					car
+					<div id="one_one">
+						apple
+						<div id="one_one_one">peor</div>
+						<div id="one_one_two">pig</div>
+						<div id="one_one_three">cool</div>
+						<div id="one_one_four">soccer</div>
+					</div>
+					<div id="one_two">
+						phone
+					</div>
+					<div id="one_three">
+						<div id="one_three_one">book</div>
+						<div id="one_three_two">school</div>
+					</div>
+				</div>
+
+				<div id="Tree_Two">
+					note
+					<div id="two_one">
+						human
+						<div id="two_one_one">code</div>
+						<div id="two_one_two">operate</div>
+						<div id="two_one_three">mon</div>
+					</div>
+					<div id="two_two">
+						program
+						<div id="two_two_one">
+							bement
+							<div id="two_two_one_one">cat</div>
+						</div>
+						<div id="two_two_two">gloss</div>
+					</div>
+				</div>
+
+				<div id="Tree_Three">
+					Fish
+				</div>
+			</div>
+		</div>
+		
+		<div id="Three">
+			<input class="btnClass" type="button" value="前序遍历"/>
+			<input class="btnClass" type="button" value="中序遍历"/>
+			<input class="btnClass" type="button" value="后序遍历"/>
+		</div>
+		<div id="Four">
+			<input type="text" id="search_content"/>
+			<input class="btnClass" type="button" value="查询" id="search_button"/>
+		</div>
+		<div id="Five">
+			<input class="btnClass" type="button" value="删除 DIV"/>
+		</div>
+		<div id="Six">
+			<input type="text" id="add_content"/>
+			<input class="btnClass" type="button" value="增加 DIV"/>
+		</div>
+		<div id="notice">
+			<ul>
+				<li>选中某个DIV，则该DIV的背景色呈现蓝色（子DIV背景色不变）</li>
+				<li>“查询”按钮是按照 前序遍历 的顺序查询的，找到的DIV会被黄色标识</li>
+				<li>先选中待删除DIV（该DIV会呈现蓝色）,然后方可点击“删除DIV”按钮进行删除</li>
+				<li>先选中父DIV，随后在输入框中输入文本，单击“增加DIV”才生效</li>
+				<li>添加DIV时，窗口自适应变化</li>
+				<li>遍历时，该DIV框背景色变为红色</li>
+				<li>遍历过程中，会弹出DIV数框，方便了解遍历过程</li>
+				<li>中序遍历时，父节点在第一个子节点后遍历</li>
+			</ul>
+		</div>
+	</body>
+</html>
